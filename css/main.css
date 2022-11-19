@@ -35,7 +35,8 @@
   .d-no {
     display: none;
   }
-  html, body {
+  html,
+body {
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -46,7 +47,7 @@
     -ms-scroll-snap-type: y mandatory;
         scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    z-index: 10000;
+    z-index: 0;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -83,7 +84,7 @@
     transition: all 0.4s;
   }
   .mobilediv #hamburger-icon.open div {
-    background-color: #20112B;
+    background-color: #20112b;
   }
   .mobilediv .open .bar1 {
     transform: rotate(-40deg) translate(-9px, 6px);
@@ -126,11 +127,6 @@
     font-size: 2em;
   }
   .mobilediv section {
-    background-image: url("../images/bg1.png");
-    background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    background-position: center;
-    background-attachment: fixed;
     height: 100vh;
     width: 100vw;
     position: relative;
@@ -166,8 +162,6 @@
     padding-bottom: 50px;
   }
   .mobilediv .swiper-slide {
-    background-position: center;
-    background-size: cover;
     width: 100vw;
     height: auto;
     filter: opacity(0.2);
@@ -196,7 +190,7 @@
     color: white;
   }
   .mobilediv .text1 {
-    color: #20122B;
+    color: #20122b;
     font-family: "Lato";
     font-weight: 900;
     font-size: 10.5vw;
@@ -204,7 +198,7 @@
   }
   .mobilediv .text2 {
     text-align: center;
-    color: #20122B;
+    color: #20122b;
     font-family: "Lato";
     font-weight: 400;
     font-size: 3.5vw;
@@ -213,7 +207,7 @@
   .mobilediv .sbmt {
     align-items: center;
     margin: 0;
-    background-color: #021B38;
+    background-color: #021b38;
     border: 0;
     width: 10rem;
     margin-top: 1rem;
@@ -242,7 +236,7 @@
     font-family: "Momcake Pro";
     font-weight: bold;
     font-size: 20vw;
-    color: #20112B;
+    color: #20112b;
   }
   .mobilediv .take {
     font-family: "Momcake Pro";
@@ -259,8 +253,8 @@
     display: grid;
     place-items: center;
     place-content: center;
-    border-left: 0.2rem solid #20122B;
-    border-bottom: 0.2rem solid #20122B;
+    border-left: 0.2rem solid #20122b;
+    border-bottom: 0.2rem solid #20122b;
     width: 35px;
     height: 35px;
     transform: rotate(315deg);
@@ -398,7 +392,7 @@
     scroll-snap-align: start;
   }
   body .container2 section .intro {
-    color: #20122B;
+    color: #20122b;
     text-align: center;
     line-height: 50px;
     margin-top: 100px;
@@ -406,7 +400,7 @@
   body .container2 section .text1 {
     text-align: left;
     left: 0;
-    color: #20122B;
+    color: #20122b;
     font-family: "Lato";
     font-weight: 700;
     font-size: 3vw;
@@ -414,7 +408,7 @@
   }
   body .container2 section .text2 {
     text-align: left;
-    color: #20122B;
+    color: #20122b;
     font-family: "Lato";
     font-weight: 500;
     font-size: 1vw;
@@ -557,7 +551,7 @@
     width: 100vw;
   }
   body .container2 .img2 {
-    transform: translateX(640px);
+    transform: translateX(600px);
     transition: all 1.6s ease;
     height: 100vh;
     width: 100vw;
@@ -565,11 +559,6 @@
   body .container2 .underline {
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     width: 160px;
-    font-size: 13px;
-  }
-  body .container2 .rightborder {
-    border-right: 1px solid rgb(255, 255, 255);
-    width: 200px;
     font-size: 13px;
   }
   body .container2 .bullet {
@@ -592,7 +581,7 @@
   body .container2 .pkgs {
     font-family: "Lato";
     font-weight: 800;
-    font-size: 2.5vw;
+    font-size: 2vw;
     color: white;
   }
   body .container2 .offers {
@@ -639,7 +628,7 @@
   }
   body .container2 .button-18 {
     align-items: center;
-    background-color: #20112B;
+    background-color: #20112b;
     border: 0;
     width: 15rem;
     height: 35px;
@@ -649,14 +638,14 @@
   }
   body .container2 .button-18:hover {
     background-color: white;
-    color: #20112B;
+    color: #20112b;
   }
   body .container2 .sbmt {
     right: 30px;
     align-items: center;
     margin: 0;
     font-size: large;
-    background-color: #021B38;
+    background-color: #021b38;
     border: 0;
     width: 8rem;
     margin-top: 1rem;
@@ -676,38 +665,80 @@
   }
 }
 @media screen and (min-width: 961px) and (min-width: 1440px) {
-  body .img {
-    margin-right: 80px;
+  body .sets1 {
+    padding-left: 8.5vw;
   }
+  body .sets1 .pkgs {
+    font-size: 2.5vw;
+  }
+  body .sets1 .offers {
+    font-size: 1.1vw;
+  }
+}
+@media screen and (min-width: 961px) and (min-width: 1440px) and (min-width: 2157px) {
+  body .sets1 {
+    padding-left: 19%;
+  }
+  body .sets1 .pkgs {
+    font-size: 2vw;
+  }
+  body .sets1 .underline {
+    width: auto;
+    font-size: 1vw;
+  }
+}
+@media screen and (min-width: 961px) and (min-width: 1440px) {
   body .arrow1 {
     margin-left: 60px;
   }
+}
+@media screen and (min-width: 961px) and (min-width: 1440px) {
   body .arrow2 {
     margin-left: 50px;
   }
+}
+@media screen and (min-width: 961px) and (min-width: 1440px) {
   body .arrow4 {
     margin-left: 50px;
   }
+}
+@media screen and (min-width: 961px) and (min-width: 1440px) {
+  body .sets {
+    padding-right: 70px;
+  }
+}
+@media screen and (min-width: 961px) and (min-width: 1440px) {
   body .frame {
     padding-left: 90px;
   }
+}
+@media screen and (min-width: 961px) and (min-width: 1440px) {
   body .frame1 {
     padding-left: 60px;
   }
 }
-@media screen and (min-width: 961px) and (device-width: 1024px) {
-  body .sets {
-    margin: 3vw;
-    padding: 0;
+@media screen and (min-width: 961px) and (min-width: 1024px) and (max-width: 1399px) {
+  body .sets .pkgs {
+    font-family: "Lato";
+    font-weight: 800;
+    font-size: 2.4vw;
+    color: white;
+  }
+  body .sets .offers {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: white;
+  }
+  body .sets .underline {
+    max-width: 15vw;
+    font-size: 1vw;
   }
   body .frame1 {
     padding-left: 60px;
   }
 }
 @media screen and (min-width: 961px) and (device-width: 1180px) {
-  body .trees {
-    display: none;
-  }
   body .sets {
     padding-left: 10px;
   }
