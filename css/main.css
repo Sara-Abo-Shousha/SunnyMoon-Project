@@ -402,7 +402,7 @@
     color: #20122B;
     font-family: "Lato";
     font-weight: 700;
-    font-size: 35px;
+    font-size: 3vw;
     letter-spacing: -1px;
   }
   body .container2 section .text2 {
@@ -410,7 +410,7 @@
     color: #20122B;
     font-family: "Lato";
     font-weight: 500;
-    font-size: 0.8em;
+    font-size: 1vw;
     line-height: 16px;
   }
   body .container2 p {
@@ -543,25 +543,17 @@
     transform: rotate(225deg);
     z-index: 1;
   }
-  body .container2 .normal {
-    right: 0px;
-    height: 100vh;
-    width: 100vw;
-    z-index: 1;
-  }
-  body .container2 .normal2 {
-    left: 0px;
-    height: 100vh;
-    width: 100vw;
-    z-index: 1;
-  }
   body .container2 .img {
     transform: translateX(-720px);
     transition: all 1.6s ease;
+    height: 100vh;
+    width: 100vw;
   }
   body .container2 .img2 {
     transform: translateX(640px);
     transition: all 1.6s ease;
+    height: 100vh;
+    width: 100vw;
   }
   body .container2 .underline {
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -606,18 +598,17 @@
     color: white;
     font-family: "Momcake Pro";
     font-weight: bold;
-    font-size: 60px;
+    font-size: 5vw;
   }
   body .container2 .crth2 {
     color: white;
     font-family: "Momcake Pro";
     font-weight: bold;
-    font-size: 40px;
+    font-size: 3vw;
   }
   body .container2 .trees {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    overflow: hidden;
     z-index: 1;
   }
   body .container2 .swiperr {
@@ -626,7 +617,7 @@
   body .container2 .crth3 {
     color: white;
     font-family: "Momcake Pro";
-    font-size: 15px;
+    font-size: 1vw;
   }
   body .container2 .crth4 {
     color: white;
@@ -677,13 +668,7 @@
     opacity: 0;
   }
 }
-@media screen and (min-width: 961px) and (device-width: 1440px) {
-  body #img {
-    width: 78vw;
-  }
-  body #img2 {
-    width: 78vw;
-  }
+@media screen and (min-width: 961px) and (min-width: 1440px) {
   body .img {
     margin-right: 80px;
   }
@@ -696,9 +681,6 @@
   body .arrow4 {
     margin-left: 50px;
   }
-  body .sets {
-    padding-left: 70px;
-  }
   body .frame {
     padding-left: 90px;
   }
@@ -707,11 +689,9 @@
   }
 }
 @media screen and (min-width: 961px) and (device-width: 1024px) {
-  body .trees {
-    display: none;
-  }
   body .sets {
-    padding-left: 10px;
+    margin: 3vw;
+    padding: 0;
   }
   body .frame1 {
     padding-left: 60px;

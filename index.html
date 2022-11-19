@@ -147,7 +147,9 @@
         </section>
         <section class="sec3" id="pkgs1" style="z-index: 0">
           <div class="container-fluid m-auto" style="padding-left: 0; padding-right: 0">
-            <div class="swiper mySwiper pt-5">
+            <div
+              class="swiper mySwiper position-relative"
+              style="top: 20vw; bottom: 0; left: 0; right: 0">
               <div class="swiper-wrapper mt-5">
                 <div class="swiper-slide mt-5 text-center">
                   <img src="./images/sunpkgs.svg" />
@@ -345,7 +347,7 @@
 
           <div class="container position-relative mt-5">
             <div class="row mt-5 ms-5 frame" style="padding-top: 40px">
-              <div class="col-md-4" style="margin-left: 120px">
+              <div class="col-auto col-sm-auto col" style="margin-left: 120px">
                 <h3 class="text1 pb-2">WHO WE ARE</h3>
                 <p class="text2 p-1">
                   We are two sisters who come from a similar
@@ -363,7 +365,7 @@
                   element to your project.
                 </p>
               </div>
-              <div class="col-1 d-no p-0 ms-3 me-3">
+              <div class="col-auto col-sm-auto d-no p-0 ms-3 me-3">
                 <img src="./images/Group 30.png" width="70" />
               </div>
               <div class="col-4 p-0 ms-5">
@@ -383,8 +385,8 @@
               </div>
             </div>
 
-            <div class="row ms-5 mb-5 frame1 text-center">
-              <div class="col offset-md-1 col-md-4 d-no">
+            <div class="row ms-5 mb-5 col-sm-auto frame1 text-center">
+              <div class="col-auto col-sm-1 offset-md-1 col-md-4 d-no">
                 <img src="./images/Group 33.svg" width="100" />
               </div>
               <div class="col col-md-2 mt-1 mb-5 d-no">
@@ -399,10 +401,10 @@
           <!-- TREEES -->
           <div class="position-absolute trees d-no">
             <div class="position-absolute" style="left: 600px">
-              <img src="./images/tree1.png" id="img" />
+              <img src="./images/tree1.png" style="height: 100vh" id="img" />
             </div>
             <div class="position-absolute" style="right: 400px">
-              <img src="./images/tree2.png" id="img2" />
+              <img src="./images/tree2.png" style="height: 100vh" id="img2" />
             </div>
           </div>
 
@@ -420,9 +422,9 @@
               <span onclick="next()" class="arrow3"></span>
             </a>
           </div>
-          <div class="container">
+          <div class="container-fluid">
             <div
-              class="row sets position-relative ms-lg-5"
+              class="row sets position-relative offset-md-1 offset-xxl-2"
               style="top: 65px; bottom: 0; left: 0px; right: 0">
               <div class="col-3 ms-4 text-center position-relative mb-4">
                 <img src="./images/Layer 3.png" style="width: 30%" />
@@ -434,9 +436,9 @@
                 <img src="./images/Layer 4.png" style="width: 30%" />
               </div>
 
-              <div class="col-auto ms-5">
-                <h3 class="pkgs pb-3" id="txtdown">SUN PACKAGE</h3>
-                <div>
+              <div class="col-auto ms-lg-5">
+                <h3 class="pkgs pb-3 ms-lg-5" id="txtdown">SUN PACKAGE</h3>
+                <div class="ms-5">
                   <div class="bullet pb-2">
                     <p class="underline offers">Illustration</p>
                   </div>
@@ -512,69 +514,79 @@
             </a>
           </div>
         </section>
+
         <section id="cntct">
-          <div class="position-relative offset-md">
-            <div class="row">
-              <div class="col-auto">
-                <div style="margin-top: 150px; margin-right: 20px; z-index: 100">
-                  <a href="#pkgs">
-                    <span class="arrow1"></span>
-                  </a>
-                </div>
-                <div class="col mt-2" style="line-height: 35px">
-                  <p>
-                    <span class="crth1">CREATE WITH US</span><br />
-                    <span class="crth2">BOOK A FREE CONSULTATION</span><br />
-                    <span class="crth3"
-                      >PLEASE FILL THE FORM SO WE CAN CONTACT YOU THE SOONEST</span
-                    >
-                  </p>
-                </div>
-                <div class="col">
-                  <form
-                    name="contactdesktop"
-                    method="POST"
-                    data-netlify="true"
-                    onSubmit="submit"
-                    onsubmit="submt()"
-                    id="frm"
-                    date-netlify-honeypot="bot-field"
-                    action="/success/">
-                    <!-- Name input -->
-                    <div class="row mb-3">
-                      <div class="col-6">
-                        <input class="d-none" name="bot-field" />
-                        <input
-                          name="name"
-                          type="text"
-                          class="form-control"
-                          placeholder="NAME"
-                          style="border-radius: 20px; outline: none" />
-                      </div>
+          <div style="position: absolute; left: 100px; float: left; z-index: 100">
+            <a href="#pkgs">
+              <span class="arrow1"></span>
+            </a>
+          </div>
+          <div class="container-fluid">
+            <div class="row offset-1 mb-5">
+              <div class="col-auto mt-2 ms-3" style="line-height: 35px">
+                <p>
+                  <span class="crth1">CREATE WITH US</span><br />
+                  <span class="crth2">BOOK A FREE CONSULTATION</span><br />
+                  <span class="crth3">PLEASE FILL THE FORM SO WE CAN CONTACT YOU THE SOONEST</span>
+                </p>
+              </div>
+
+              <div
+                class="col-4 me-5 position-absolute"
+                style="right: 5vw; float: right; z-index: 100">
+                <form
+                  name="contactdesktop"
+                  method="POST"
+                  data-netlify="true"
+                  onSubmit="submit"
+                  onsubmit="submt()"
+                  id="frm"
+                  date-netlify-honeypot="bot-field"
+                  action="/success/">
+                  <!-- Name input -->
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <input class="d-none" name="bot-field" />
+                      <input
+                        name="name"
+                        type="text"
+                        class="form-control"
+                        placeholder="NAME"
+                        style="border-radius: 20px; outline: none" />
                     </div>
 
-                    <div class="form-outline mb-2">
-                      <textarea
-                        name="message"
+                    <div class="col-6">
+                      <input class="d-none" name="bot-field" />
+                      <input
+                        name="email"
+                        type="text"
                         class="form-control"
-                        style="resize: none; height: 150px; border-radius: 10px; outline: none"
-                        rows="1"
-                        placeholder="WRITE TO US…"></textarea>
+                        placeholder="EMAIL"
+                        style="border-radius: 20px; outline: none" />
                     </div>
-                    <!-- Submit button -->
-                    <button type="submit" class="btn mb-5 sbmt">SEND</button>
-                  </form>
-                  <div
-                    class="col tnku text-center position-absolute"
-                    style="line-height: 20px; top: 3rem; bottom: 0; left: 30em; right: 0"
-                    id="tnku">
-                    <p>
-                      <span class="crth4">Thank You for writing to us! </span><br />
-                      <span class="crth5"
-                        >Your message has been sent and we will reply the soonest</span
-                      >
-                    </p>
                   </div>
+
+                  <div class="form-outline mb-2">
+                    <textarea
+                      name="message"
+                      class="form-control"
+                      style="resize: none; height: 150px; border-radius: 10px; outline: none"
+                      rows="1"
+                      placeholder="WRITE TO US…"></textarea>
+                  </div>
+                  <!-- Submit button -->
+                  <button type="submit" class="btn mb-5 sbmt">SEND</button>
+                </form>
+                <div
+                  class="col tnku text-center position-absolute"
+                  style="line-height: 20px; top: 3rem; bottom: 0; left: 30em; right: 0"
+                  id="tnku">
+                  <p>
+                    <span class="crth4">Thank You for writing to us! </span><br />
+                    <span class="crth5"
+                      >Your message has been sent and we will reply the soonest</span
+                    >
+                  </p>
                 </div>
               </div>
             </div>
