@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="209" height="150.937" viewBox="0 0 209 150.937">
+  <g id="Group_46" data-name="Group 46" transform="translate(-3699.667 -643.38)">
+    <g id="Group_45" data-name="Group 45">
+      <path id="Path_6" data-name="Path 6" d="M3762.7,721.73a3.2,3.2,0,0,1-2.47-2.55,6.141,6.141,0,0,0-.27-1.05h0a6.141,6.141,0,0,0-.27,1.05,3.194,3.194,0,0,1-2.48,2.55l-.53.12a6.953,6.953,0,0,0,.69.22,3.159,3.159,0,0,1,2.33,2.52,5.783,5.783,0,0,0,.26.98h0a5.316,5.316,0,0,0,.26-.98,3.185,3.185,0,0,1,2.34-2.52,5.053,5.053,0,0,0,.69-.22C3763.24,721.85,3763.02,721.8,3762.7,721.73Z" fill="none" stroke="#20152b" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_7" data-name="Path 7" d="M3842.11,681.6a6.037,6.037,0,0,1-4.67-4.82,10.307,10.307,0,0,0-.52-1.98h0a10.325,10.325,0,0,0-.52,1.98,6.022,6.022,0,0,1-4.69,4.82l-1,.22a9.883,9.883,0,0,0,1.3.41,6.015,6.015,0,0,1,4.41,4.77,10.957,10.957,0,0,0,.49,1.85h0a10.708,10.708,0,0,0,.49-1.85,6.03,6.03,0,0,1,4.41-4.77,10.4,10.4,0,0,0,1.3-.41C3843.13,681.83,3842.72,681.73,3842.11,681.6Z" fill="none" stroke="#20152b" stroke-miterlimit="10" stroke-width="1"/>
+      <g id="Group_39" data-name="Group 39">
+        <g id="Group_38" data-name="Group 38">
+          <g id="Group_37" data-name="Group 37">
+            <g id="Group_35" data-name="Group 35">
+              <line id="Line_29" data-name="Line 29" x2="3.15" transform="translate(3802.29 647.24)" fill="none" stroke="#20152b" stroke-miterlimit="10" stroke-width="1"/>
+              <line id="Line_30" data-name="Line 30" x2="3.15" transform="translate(3806.87 647.24)" fill="none" stroke="#20152b" stroke-miterlimit="10" stroke-width="1"/>
+            </g>
+            <g id="Group_36" data-name="Group 36">
+              <line id="Line_31" data-name="Line 31" y2="2.92" transform="translate(3806.15 643.38)" fill="none" stroke="#20152b" stroke-miterlimit="10" stroke-width="1"/>
+              <line id="Line_32" data-name="Line 32" y2="2.93" transform="translate(3806.15 648.17)" fill="none" stroke="#20152b" stroke-miterlimit="10" stroke-width="1"/>
+            </g>
+          </g>
+        </g>
+        <path id="Path_8" data-name="Path 8" d="M3806.15,645.03c0,2.09-.1,2.21-1.95,2.21,1.85,0,1.95.12,1.95,2.21,0-2.09.1-2.21,1.95-2.21C3806.26,647.24,3806.15,647.12,3806.15,645.03Z" fill="none" stroke="#20152b" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+      <g id="Group_44" data-name="Group 44">
+        <g id="Group_43" data-name="Group 43">
+          <g id="Group_42" data-name="Group 42">
+            <g id="Group_40" data-name="Group 40">
+              <line id="Line_33" data-name="Line 33" x2="5.5" transform="translate(3748.13 684.47)" fill="none" stroke="#20152b" stroke-miterlimit="10" stroke-width="1"/>
+              <line id="Line_34" data-name="Line 34" x2="5.49" transform="translate(3756.13 684.47)" fill="none" stroke="#20152b" stroke-miterlimit="10" stroke-width="1"/>
+            </g>
+            <g id="Group_41" data-name="Group 41">
+              <line id="Line_35" data-name="Line 35" y2="5.12" transform="translate(3754.88 677.72)" fill="none" stroke="#20152b" stroke-miterlimit="10" stroke-width="1"/>
+              <line id="Line_36" data-name="Line 36" y2="5.11" transform="translate(3754.88 686.1)" fill="none" stroke="#20152b" stroke-miterlimit="10" stroke-width="1"/>
+            </g>
+          </g>
+        </g>
+        <path id="Path_9" data-name="Path 9" d="M3754.88,680.61c0,3.66-.18,3.86-3.41,3.86,3.23,0,3.41.2,3.41,3.86,0-3.66.18-3.86,3.41-3.86C3755.06,684.47,3754.88,684.26,3754.88,680.61Z" fill="none" stroke="#20152b" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+      <text id="UPCOMING_ORIGINAL_SUNNYMOON_TITLES" data-name="UPCOMING ORIGINAL 
+SUNNYMOON TITLES" transform="translate(3699.667 766.317)" fill="#20152b" font-size="19.443" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="0" y="0">UPCOMING ORIGINAL </tspan><tspan x="0" y="23.33">SUNNYMOON TITLES</tspan></text>
+      <text id="_2" data-name="2" transform="translate(3773.018 728.05)" fill="#20152b" font-size="77" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">2</tspan></text>
+    </g>
+  </g>
+</svg>

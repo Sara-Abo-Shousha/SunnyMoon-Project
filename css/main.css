@@ -1,0 +1,742 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+@font-face {
+  font-family: "Momcake Pro";
+  src: url("MomcakePro-Bold.eot");
+  src: local("Momcake Pro Bold"), local("MomcakePro-Bold"), url("MomcakePro-Bold.eot?#iefix") format("embedded-opentype"), url("MomcakePro-Bold.woff2") format("woff2"), url("MomcakePro-Bold.woff") format("woff"), url("MomcakePro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Momcake Pro";
+  src: url("MomcakePro-Medium.eot");
+  src: local("Momcake Pro Medium"), local("MomcakePro-Medium"), url("MomcakePro-Medium.eot?#iefix") format("embedded-opentype"), url("MomcakePro-Medium.woff2") format("woff2"), url("MomcakePro-Medium.woff") format("woff"), url("MomcakePro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Momcake Pro";
+  src: url("MomcakePro-Thin.eot");
+  src: local("Momcake Pro Thin"), local("MomcakePro-Thin"), url("MomcakePro-Thin.eot?#iefix") format("embedded-opentype"), url("MomcakePro-Thin.woff2") format("woff2"), url("MomcakePro-Thin.woff") format("woff"), url("MomcakePro-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Momcake Pro";
+  src: url("MomcakePro-Regular.eot");
+  src: local("Momcake Pro"), local("MomcakePro-Regular"), url("MomcakePro-Regular.eot?#iefix") format("embedded-opentype"), url("MomcakePro-Regular.woff2") format("woff2"), url("MomcakePro-Regular.woff") format("woff"), url("MomcakePro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@media screen and (max-width: 961px) {
+  .d-no {
+    display: none;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .mobilediv {
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    z-index: 10000;
+    scroll-behavior: smooth;
+  }
+  .mobilediv .onsbmt {
+    display: none;
+  }
+  .mobilediv .tnku {
+    display: none;
+  }
+  .mobilediv ul {
+    margin: 0;
+    padding: 0;
+  }
+  .mobilediv li {
+    list-style: none;
+  }
+  .mobilediv a {
+    text-decoration: none;
+  }
+  .mobilediv #hamburger-icon div {
+    padding: 0;
+    display: block;
+    background-color: #ffffff;
+    width: 3em;
+    height: 0.3em;
+    margin: 0.5em;
+    border-radius: 100rem;
+    transition: all 0.4s;
+  }
+  .mobilediv #hamburger-icon.open div {
+    background-color: #20112B;
+  }
+  .mobilediv .open .bar1 {
+    transform: rotate(-40deg) translate(-9px, 6px);
+  }
+  .mobilediv .open .bar2 {
+    opacity: 0;
+  }
+  .mobilediv .open .bar3 {
+    transform: rotate(40deg) translate(-11px, -8px);
+  }
+  .mobilediv nav {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  .mobilediv .hamburger {
+    display: block;
+    z-index: 1000;
+    margin-left: auto;
+    transition: 0.4s;
+  }
+  .mobilediv .nav-menu {
+    position: fixed;
+    margin: auto;
+    top: -100vh;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    width: 100vw;
+    transition: 0.3s;
+  }
+  .mobilediv .nav-menu.active {
+    top: 0;
+  }
+  .mobilediv .nav-link {
+    margin-top: 5vw;
+    text-align: center;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 2em;
+  }
+  .mobilediv section {
+    background-image: url("../images/bg1.png");
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    scroll-snap-align: start;
+  }
+  .mobilediv .sec1 {
+    background-image: url("../images/bg1.png");
+    background-size: 100vw 100vh;
+    -webkit-background-size: 100vw 100vh;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .mobilediv .sec2 {
+    background-image: url("../images/bg2.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .mobilediv .sec3 {
+    background-image: url("../images/bg3.png");
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .mobilediv .sec4 {
+    background-image: url("../images/bg4.png");
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .mobilediv .swiper {
+    width: 100vw;
+    padding-bottom: 50px;
+  }
+  .mobilediv .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    filter: opacity(0.2);
+  }
+  .mobilediv .swiper-slide-active {
+    filter: opacity(1);
+  }
+  .mobilediv .swiper-3d .swiper-slide-shadow-right,
+.mobilediv .swiper-3d .swiper-slide-shadow-left {
+    background-image: none;
+  }
+  .mobilediv .swiper-pagination-bullet-active {
+    background-color: white;
+  }
+  .mobilediv .intro {
+    padding-top: 8rem;
+    text-align: center;
+  }
+  .mobilediv p {
+    margin: 0;
+  }
+  .mobilediv .pkgs {
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: white;
+  }
+  .mobilediv .text1 {
+    color: #20122B;
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 10.5vw;
+    text-align: center;
+  }
+  .mobilediv .text2 {
+    text-align: center;
+    color: #20122B;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 3.5vw;
+    line-height: 1.2em;
+  }
+  .mobilediv .sbmt {
+    align-items: center;
+    margin: 0;
+    background-color: #021B38;
+    border: 0;
+    width: 10rem;
+    margin-top: 1rem;
+    height: 40px;
+    border-radius: 100rem;
+    color: #ffffff;
+  }
+  .mobilediv .bullet {
+    position: relative;
+    padding-left: 2.2em;
+  }
+  .mobilediv .bullet:before {
+    background-image: url("../images/path16.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 50% 60%;
+    background-position: 5px 6px;
+    content: "";
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .mobilediv .wlc {
+    font-family: "Momcake Pro";
+    font-weight: bold;
+    font-size: 20vw;
+    color: #20112B;
+  }
+  .mobilediv .take {
+    font-family: "Momcake Pro";
+    font-weight: 100;
+    font-size: 10vw;
+  }
+  .mobilediv .come {
+    margin-top: 2rem;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 4vw;
+  }
+  .mobilediv .arrow {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    border-left: 0.2rem solid #20122B;
+    border-bottom: 0.2rem solid #20122B;
+    width: 35px;
+    height: 35px;
+    transform: rotate(315deg);
+  }
+  .mobilediv .offers {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: white;
+  }
+  .mobilediv .underline {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    max-width: 13rem;
+    width: auto;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.3em;
+  }
+  .mobilediv .slider-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: linear-gradient(to right, rgb(255, 65, 108), rgb(255, 75, 43));
+  }
+  .mobilediv .pkgs-slider {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    justify-content: center;
+    transition: 0.7s;
+  }
+  .mobilediv .slide-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 10px;
+  }
+  .mobilediv .pkg {
+    position: relative;
+    width: 240px;
+    height: 370px;
+    transition: 0.5s;
+  }
+  .mobilediv .button {
+    position: absolute;
+    width: 240px;
+    height: 370px;
+    transition: 0.5s;
+  }
+  .mobilediv .crth1 {
+    color: white;
+    font-family: "Momcake Pro";
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .mobilediv .crth2 {
+    color: white;
+    font-family: "Lato";
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+  .mobilediv .crth3 {
+    color: white;
+    font-family: "Momcake Pro";
+    font-size: 1rem;
+  }
+  .mobilediv .msg {
+    text-align: center;
+  }
+  .mobilediv .crth4 {
+    color: white;
+    font-family: "Momcake Pro";
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .mobilediv .crth5 {
+    color: white;
+    font-family: "Momcake Pro";
+    font-size: 1.2rem;
+  }
+}
+/* LAPTOP SCREENS*/
+#img {
+  width: 58vw;
+}
+
+#img2 {
+  width: 64vw;
+}
+
+@media screen and (min-width: 961px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  body .mobilediv {
+    display: none;
+  }
+  body a {
+    -webkit-text-decoration: dashed;
+            text-decoration: dashed;
+    color: #8922d8;
+  }
+  body .container2 {
+    height: 100%;
+    width: 100%;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    background: url("../images/bg final11.png") no-repeat;
+    background-size: 100% 100%;
+    background-attachment: local;
+    /* CSS */
+  }
+  body .container2 .wrapper {
+    display: flex;
+    width: 200vw;
+  }
+  body .container2 section {
+    position: relative;
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+  }
+  body .container2 section .intro {
+    color: #20122B;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 100px;
+  }
+  body .container2 section .text1 {
+    text-align: left;
+    left: 0;
+    color: #20122B;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: -1px;
+  }
+  body .container2 section .text2 {
+    text-align: left;
+    color: #20122B;
+    font-family: "Lato";
+    font-weight: 500;
+    font-size: 0.8em;
+    line-height: 16px;
+  }
+  body .container2 p {
+    font-family: "Lato", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  body .container2 .nav-hover {
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: normal;
+    word-spacing: -0.5;
+    position: relative;
+  }
+  body .container2 .nav-hover::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 20px;
+    display: block;
+  }
+  body .container2 .nav-hover:hover::after {
+    width: 100%;
+    transition: 0.1s ease-in-out;
+  }
+  body .container2 .navbullet {
+    padding-right: 30px;
+    padding-left: 20px;
+  }
+  body .container2 .navbullet:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 3px;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+  body .container2 .sm-icons {
+    flex-direction: row;
+  }
+  body .container2 .sm-icons .nav-link {
+    padding-right: 1em;
+  }
+  body .container2 .wlc {
+    font-family: "Momcake Pro";
+    font-weight: bold;
+    font-size: 70px;
+    padding-right: 15px;
+  }
+  body .container2 .take {
+    font-family: "Momcake Pro";
+    font-weight: 100;
+    font-size: 65px;
+  }
+  body .container2 .come {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 14px;
+  }
+  body .container2 .arrow {
+    background-image: url("../images/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    content: " ";
+    height: 70px;
+    width: 70px;
+    position: relative;
+    margin-left: 190px;
+    transition: all 0.1s ease;
+  }
+  body .container2 .arrow:hover {
+    background-image: url("../images/arrow1.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  body .container2 .arrow1 {
+    display: grid;
+    position: absolute;
+    place-items: center;
+    place-content: center;
+    border-left: 6px solid #ffffff;
+    border-bottom: 6px solid #ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 0.2em;
+    transform: rotate(45deg);
+  }
+  body .container2 .arrow2 {
+    display: grid;
+    position: absolute;
+    place-items: center;
+    place-content: center;
+    border-left: 6px solid rgb(255, 255, 255);
+    border-bottom: 6px solid rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+    border-radius: 0.2em;
+    transform: rotate(225deg);
+    z-index: 1;
+  }
+  body .container2 .arrow3 {
+    display: grid;
+    position: absolute;
+    place-items: center;
+    place-content: center;
+    border-left: 6px solid #250a3a;
+    border-bottom: 6px solid #250a3a;
+    width: 20px;
+    height: 20px;
+    border-radius: 0.2em;
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+  body .container2 .arrow4 {
+    display: grid;
+    position: absolute;
+    place-items: center;
+    place-content: center;
+    border-left: 6px solid #250a3a;
+    border-bottom: 6px solid #250a3a;
+    width: 20px;
+    height: 20px;
+    border-radius: 0.2em;
+    transform: rotate(225deg);
+    z-index: 1;
+  }
+  body .container2 .normal {
+    right: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+  }
+  body .container2 .normal2 {
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+  }
+  body .container2 .img {
+    transform: translateX(-720px);
+    transition: all 1.6s ease;
+  }
+  body .container2 .img2 {
+    transform: translateX(640px);
+    transition: all 1.6s ease;
+  }
+  body .container2 .underline {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    width: 160px;
+    font-size: 13px;
+  }
+  body .container2 .rightborder {
+    border-right: 1px solid rgb(255, 255, 255);
+    width: 200px;
+    font-size: 13px;
+  }
+  body .container2 .bullet {
+    position: relative;
+    padding-left: 40px;
+  }
+  body .container2 .bullet:before {
+    background-image: url("../images/path16.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 50% 60%;
+    background-position: 5px 3px;
+    content: "";
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  body .container2 .pkgs {
+    font-family: "Lato";
+    font-weight: 800;
+    font-size: 2.5vw;
+    color: white;
+  }
+  body .container2 .offers {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 1vw;
+    color: white;
+  }
+  body .container2 .crth1 {
+    color: white;
+    font-family: "Momcake Pro";
+    font-weight: bold;
+    font-size: 60px;
+  }
+  body .container2 .crth2 {
+    color: white;
+    font-family: "Momcake Pro";
+    font-weight: bold;
+    font-size: 40px;
+  }
+  body .container2 .trees {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+  }
+  body .container2 .swiperr {
+    display: none;
+  }
+  body .container2 .crth3 {
+    color: white;
+    font-family: "Momcake Pro";
+    font-size: 15px;
+  }
+  body .container2 .crth4 {
+    color: white;
+    font-family: "Momcake Pro";
+    font-weight: 700;
+    font-size: 30px;
+  }
+  body .container2 .crth5 {
+    color: white;
+    font-family: "Momcake Pro";
+    font-size: 20px;
+  }
+  body .container2 .button-18 {
+    align-items: center;
+    background-color: #20112B;
+    border: 0;
+    width: 15rem;
+    height: 35px;
+    border-radius: 100px;
+    color: #ffffff;
+    z-index: 1000;
+  }
+  body .container2 .button-18:hover {
+    background-color: white;
+    color: #20112B;
+  }
+  body .container2 .sbmt {
+    right: 30px;
+    align-items: center;
+    margin: 0;
+    font-size: large;
+    background-color: #021B38;
+    border: 0;
+    width: 8rem;
+    margin-top: 1rem;
+    height: auto;
+    position: absolute;
+    border-radius: 100rem;
+    color: #ffffff;
+  }
+  body .container2 .onsbmt {
+    display: none;
+  }
+  body .container2 .tnku {
+    display: none;
+  }
+  body .container2 .disapper {
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 961px) and (device-width: 1440px) {
+  body #img {
+    width: 78vw;
+  }
+  body #img2 {
+    width: 78vw;
+  }
+  body .img {
+    margin-right: 80px;
+  }
+  body .arrow1 {
+    margin-left: 60px;
+  }
+  body .arrow2 {
+    margin-left: 50px;
+  }
+  body .arrow4 {
+    margin-left: 50px;
+  }
+  body .sets {
+    padding-left: 70px;
+  }
+  body .frame {
+    padding-left: 90px;
+  }
+  body .frame1 {
+    padding-left: 60px;
+  }
+}
+@media screen and (min-width: 961px) and (device-width: 1024px) {
+  body .trees {
+    display: none;
+  }
+  body .sets {
+    padding-left: 10px;
+  }
+  body .frame1 {
+    padding-left: 60px;
+  }
+}
+@media screen and (min-width: 961px) and (device-width: 1180px) {
+  body .trees {
+    display: none;
+  }
+  body .sets {
+    padding-left: 10px;
+  }
+  body .sets .pkgs {
+    font-family: "Lato";
+    font-weight: 800;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+  }
+  body .sets .offers {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+  }
+  body .frame1 {
+    padding-left: 60px;
+  }
+}/*# sourceMappingURL=main.css.map */
