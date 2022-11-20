@@ -194,9 +194,9 @@ body {
     height: 100%;
     display: list-item;
     width: 100%;
-    padding-bottom: 2em;
+    padding-bottom: 5em;
     margin: 0;
-    filter: opacity(0.2);
+    filter: opacity(0.1);
   }
   .mobilediv .swiper-slide-active {
     filter: opacity(1);
@@ -216,7 +216,7 @@ body {
     background-color: white;
   }
   .mobilediv .intro {
-    padding-top: 8rem;
+    padding-top: 8em;
     text-align: center;
   }
   .mobilediv p {
@@ -225,7 +225,7 @@ body {
   .mobilediv .pkgs {
     font-family: "Lato";
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 10vw;
     color: white;
   }
   .mobilediv .text1 {
@@ -303,16 +303,51 @@ body {
   .mobilediv .offers {
     font-family: "Lato";
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 4vw;
     color: white;
   }
   .mobilediv .underline {
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-    max-width: 13rem;
-    width: auto;
+    max-width: 13em;
     padding-bottom: 0.2em;
     margin-bottom: 0.3em;
   }
+}
+@media only screen and (max-width: 961px) and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .mobilediv #up,
+.mobilediv #dog {
+    width: 45%;
+  }
+  .mobilediv #by {
+    width: 58%;
+  }
+  .mobilediv .svgs {
+    padding-top: 3em;
+  }
+  .mobilediv .text2 {
+    font-size: 3vw;
+  }
+  .mobilediv .text1 {
+    padding-top: 2em;
+  }
+  .mobilediv #sun,
+.mobilediv #moon {
+    width: 20%;
+  }
+  .mobilediv #ecl {
+    width: 25%;
+  }
+  .mobilediv .pkgs {
+    font-size: 6vw;
+  }
+  .mobilediv .offers {
+    font-size: 3vw;
+  }
+  .mobilediv .bullet {
+    margin-left: 6em;
+  }
+}
+@media screen and (max-width: 961px) {
   .mobilediv .slider-container {
     width: 100%;
     height: auto;
@@ -321,6 +356,8 @@ body {
     overflow: hidden;
     background-color: linear-gradient(to right, rgb(255, 65, 108), rgb(255, 75, 43));
   }
+}
+@media screen and (max-width: 961px) {
   .mobilediv .pkgs-slider {
     width: 100%;
     height: 600px;
@@ -331,50 +368,68 @@ body {
     justify-content: center;
     transition: 0.7s;
   }
+}
+@media screen and (max-width: 961px) {
   .mobilediv .slide-div {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 30px 0 10px;
   }
+}
+@media screen and (max-width: 961px) {
   .mobilediv .pkg {
     position: relative;
     width: 240px;
     height: 370px;
     transition: 0.5s;
   }
+}
+@media screen and (max-width: 961px) {
   .mobilediv .button {
     position: absolute;
     width: 240px;
     height: 370px;
     transition: 0.5s;
   }
+}
+@media screen and (max-width: 961px) {
   .mobilediv .crth1 {
     color: white;
     font-family: "Momcake Pro";
     font-weight: bold;
     font-size: 3rem;
   }
+}
+@media screen and (max-width: 961px) {
   .mobilediv .crth2 {
     color: white;
     font-family: "Lato";
     font-size: 1em;
     letter-spacing: 1px;
   }
+}
+@media screen and (max-width: 961px) {
   .mobilediv .crth3 {
     color: white;
     font-family: "Momcake Pro";
     font-size: 1rem;
   }
+}
+@media screen and (max-width: 961px) {
   .mobilediv .msg {
     text-align: center;
   }
+}
+@media screen and (max-width: 961px) {
   .mobilediv .crth4 {
     color: white;
     font-family: "Momcake Pro";
     font-weight: 700;
     font-size: 2rem;
   }
+}
+@media screen and (max-width: 961px) {
   .mobilediv .crth5 {
     color: white;
     font-family: "Momcake Pro";
