@@ -44,6 +44,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 //@each $var in list {
 
 @media screen and (max-width: 961px) {
@@ -73,12 +74,15 @@
         scroll-behavior: smooth;
         margin: 0;
         padding: 0;
+
         .onsbmt {
             display: none;
         }
+
         .tnku {
             display: none;
         }
+
         $bullet: url("../images/path16.png");
         $home_img: url("../images/Group/136 (2).png");
         $home_img1: url("../images/bg1.png");
@@ -90,12 +94,15 @@
             margin: 0;
             padding: 0;
         }
+
         li {
             list-style: none;
         }
+
         a {
             text-decoration: none;
         }
+
         #hamburger-icon div {
             padding: 0;
             display: block;
@@ -106,29 +113,37 @@
             border-radius: 100rem;
             transition: all 0.4s;
         }
+
         #hamburger-icon.open div {
             background-color: #20112b;
         }
+
         .open .bar1 {
-            -webkit-transform: rotate(-40deg) translate(-10px, 6px);
-            transform: rotate(-40deg) translate(-9px, 6px);
+            -webkit-transform: rotate(-50deg) translate(-10px, 6px);
+            transform: rotate(-50deg) translate(-9px, 6px);
         }
 
         .open .bar2 {
             opacity: 0;
         }
+
         .open .bar3 {
-            -webkit-transform: rotate(40deg) translate(-11px, -8px);
-            transform: rotate(40deg) translate(-11px, -8px);
+            -webkit-transform: rotate(50deg) translate(-11px, -8px);
+            transform: rotate(50deg) translate(-11px, -8px);
         }
+
         nav {
             width: 100vw;
             padding: 0;
             margin: 0;
         }
+        .swiper-pagination-bullet-active {
+            background-color: white;
+        }
+
         .hamburger {
             display: block;
-            z-index: 1000;
+            z-index: 1;
             margin-left: auto;
             transition: 0.4s;
         }
@@ -143,72 +158,121 @@
             width: 100vw;
             transition: 0.3s;
         }
+
         .nav-menu.active {
             top: 0;
         }
+
         .nav-link {
-            margin-top: 5vw;
             text-align: center;
             font-family: "Lato";
             font-weight: 400;
             font-size: 2em;
         }
+
         section {
             height: 100vh;
             width: 100vw;
             position: relative;
             scroll-snap-align: start;
         }
+        @supports (-webkit-touch-callout: none) {
+            .sec1 {
+                background-image: $home_img1;
+                background-size: 100vw 100vh;
+                -webkit-background-size: 100vw 100vh;
+                background-position: center;
+            }
 
-        .sec1 {
-            background-image: $home_img1;
-            background-size: 100vw 100vh;
-            -webkit-background-size: 100vw 100vh;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        .sec2 {
-            background-image: $home_img2;
-            -webkit-background-size: cover;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        .sec3 {
-            background-image: $home_img3;
-            -webkit-background-size: cover;
+            .sec2 {
+                background-image: $home_img2;
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center;
+            }
 
-            background-size: 100vw 100vh;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        .sec4 {
-            background-image: $home_img4;
-            -webkit-background-size: cover;
+            .sec3 {
+                background-image: $home_img3;
+                -webkit-background-size: cover;
 
-            background-size: 100vw 100vh;
-            background-position: center;
-            background-attachment: fixed;
+                background-size: 100vw 100vh;
+                background-position: center;
+            }
+
+            .sec4 {
+                background-image: $home_img4;
+                -webkit-background-size: cover;
+
+                background-size: 100vw 100vh;
+                background-position: center;
+            }
         }
+        @supports not (-webkit-touch-callout: none) {
+            /* CSS for other than iOS devices */
+            .sec1 {
+                background-image: $home_img1;
+                background-size: 100vw 100vh;
+                -webkit-background-size: 100vw 100vh;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .sec2 {
+                background-image: $home_img2;
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .sec3 {
+                background-image: $home_img3;
+                -webkit-background-size: cover;
+
+                background-size: 100vw 100vh;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .sec4 {
+                background-image: $home_img4;
+                -webkit-background-size: cover;
+
+                background-size: 100vw 100vh;
+                background-position: center;
+                background-attachment: fixed;
+            }
+        }
+
         .swiper {
             width: 100vw;
-
-            padding-bottom: 50px;
         }
 
         .swiper-slide {
-            width: 100vw;
-            height: auto;
+            height: 100%;
+            display: list-item;
+            width: 100%;
+            padding-bottom: 2em;
+            margin: 0;
+
             filter: opacity(0.2);
         }
         .swiper-slide-active {
             filter: opacity(1);
         }
+        .swiper-wrapper {
+            height: auto;
+            position: relative;
+        }
+
         .swiper-3d .swiper-slide-shadow-right,
         .swiper-3d .swiper-slide-shadow-left {
             background-image: none;
         }
 
+        .swiper-pagination-bullet {
+            background-color: rgb(255, 255, 255, 0.7);
+        }
         .swiper-pagination-bullet-active {
             background-color: white;
         }
@@ -217,31 +281,38 @@
             padding-top: 8rem;
             text-align: center;
         }
+
         p {
             //display: block;
             margin: 0;
         }
+
         .pkgs {
             font-family: "Lato";
             font-weight: bold;
             font-size: 2.2rem;
             color: white;
         }
+
         .text1 {
             color: #20122b;
             font-family: "Lato";
             font-weight: 900;
-            font-size: 10.5vw;
+            font-size: 8vw;
             text-align: center;
         }
+
         .text2 {
             text-align: center;
             color: #20122b;
             font-family: "Lato";
             font-weight: 400;
-            font-size: 3.5vw;
+            font-size: 3.2vw;
             line-height: 1.2em;
+            letter-spacing: -0.1px;
+            white-space: nowrap;
         }
+
         .sbmt {
             align-items: center;
             margin: 0;
@@ -253,6 +324,7 @@
             border-radius: 100rem;
             color: #ffffff;
         }
+
         .bullet {
             position: relative;
             padding-left: 2.2em;
@@ -271,23 +343,27 @@
                 left: 0;
             }
         }
+
         .wlc {
             font-family: "Momcake Pro";
             font-weight: bold;
             font-size: 20vw;
             color: #20112b;
         }
+
         .take {
             font-family: "Momcake Pro";
             font-weight: 100;
             font-size: 10vw;
         }
+
         .come {
             margin-top: 2rem;
             font-family: "Lato";
             font-weight: 400;
             font-size: 4vw;
         }
+
         .arrow {
             display: grid;
             place-items: center;
@@ -298,12 +374,14 @@
             height: 35px;
             transform: rotate(315deg);
         }
+
         .offers {
             font-family: "Lato";
             font-weight: 400;
             font-size: 1.1rem;
             color: white;
         }
+
         .underline {
             border-bottom: 1px solid rgb(255, 255, 255, 0.4);
             max-width: 13rem;
@@ -320,6 +398,7 @@
             overflow: hidden;
             background-color: linear-gradient(to right, rgb(255, 65, 108), rgb(255, 75, 43));
         }
+
         .pkgs-slider {
             width: 100%;
             height: 600px;
@@ -330,25 +409,28 @@
             justify-content: center;
             transition: 0.7s;
         }
+
         .slide-div {
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 30px 0 10px;
         }
+
         .pkg {
             position: relative;
             width: 240px;
             height: 370px;
             transition: 0.5s;
         }
+
         .button {
             position: absolute;
             width: 240px;
             height: 370px;
             transition: 0.5s;
-            //background-color: #250a3a;
         }
+
         .crth1 {
             color: white;
             font-family: "Momcake Pro";
@@ -362,21 +444,25 @@
             font-size: 1em;
             letter-spacing: 1px;
         }
+
         .crth3 {
             color: white;
             font-family: "Momcake Pro";
             font-size: 1rem;
         }
+
         .msg {
             //padding-top:8rem;
             text-align: center;
         }
+
         .crth4 {
             color: white;
             font-family: "Momcake Pro";
             font-weight: 700;
             font-size: 2rem;
         }
+
         .crth5 {
             color: white;
             font-family: "Momcake Pro";
@@ -384,14 +470,17 @@
         }
     }
 }
+
 /* LAPTOP SCREENS*/
 
 #img {
     width: 58vw;
 }
+
 #img2 {
     width: 64vw;
 }
+
 @media screen and (min-width: 961px) {
     body {
         height: 100vh;
@@ -404,6 +493,7 @@
         $arrow: url("../images/arrow.svg");
         $arrow1: url("../images/arrow1.svg");
         $tree1: url("../images/tree1.png");
+
         .mobilediv {
             display: none;
         }
@@ -412,6 +502,7 @@
             text-decoration: dashed;
             color: #8922d8;
         }
+
         .container2 {
             height: 100%;
             width: 100%;
@@ -427,6 +518,7 @@
                 display: flex;
                 width: 200vw;
             }
+
             section {
                 position: relative;
                 flex: none;
@@ -443,6 +535,7 @@
                     line-height: 50px;
                     margin-top: 100px;
                 }
+
                 .text1 {
                     text-align: left;
                     left: 0;
@@ -452,6 +545,7 @@
                     font-size: 3vw;
                     letter-spacing: -1px;
                 }
+
                 .text2 {
                     text-align: left;
                     color: #20122b;
@@ -476,6 +570,7 @@
                 letter-spacing: normal;
                 word-spacing: -0.5;
                 position: relative;
+
                 &::after {
                     content: "";
 
@@ -487,6 +582,7 @@
                     border-radius: 20px;
                     display: block;
                 }
+
                 &:hover::after {
                     width: 100%;
                     transition: 0.1s ease-in-out;
@@ -496,6 +592,7 @@
             .navbullet {
                 padding-right: 30px;
                 padding-left: 20px;
+
                 &:before {
                     content: "";
                     position: absolute;
@@ -506,6 +603,7 @@
                     border-radius: 50%;
                 }
             }
+
             .sm-icons {
                 flex-direction: row;
 
@@ -520,11 +618,13 @@
                 font-size: 70px;
                 padding-right: 15px;
             }
+
             .take {
                 font-family: "Momcake Pro";
                 font-weight: 100;
                 font-size: 65px;
             }
+
             .come {
                 font-family: "Lato";
                 font-weight: 400;
@@ -541,12 +641,14 @@
                 position: relative;
                 margin-left: 190px;
                 transition: all 0.1s ease;
+
                 &:hover {
                     background-image: $arrow1;
                     background-repeat: no-repeat;
                     background-size: 100% 100%;
                 }
             }
+
             .arrow1 {
                 display: grid;
                 position: absolute;
@@ -559,6 +661,7 @@
                 border-radius: 0.2em;
                 transform: rotate(45deg);
             }
+
             .arrow2 {
                 display: grid;
                 position: absolute;
@@ -572,6 +675,7 @@
                 transform: rotate(225deg);
                 z-index: 1;
             }
+
             .arrow3 {
                 display: grid;
                 position: absolute;
@@ -585,6 +689,7 @@
                 transform: rotate(45deg);
                 z-index: 1;
             }
+
             .arrow4 {
                 display: grid;
                 position: absolute;
@@ -600,7 +705,7 @@
             }
 
             .img {
-                transform: translateX(-720px);
+                transform: translateX(-45em);
                 transition: all 1.6s ease;
                 height: 100vh;
                 width: 100vw;
@@ -608,12 +713,13 @@
             }
 
             .img2 {
-                transform: translateX(600px);
+                transform: translateX(38em);
                 transition: all 1.6s ease;
                 height: 100vh;
                 width: 100vw;
                 // transition-delay: 300ms;
             }
+
             .underline {
                 border-bottom: 1px solid rgb(255, 255, 255, 0.4);
                 width: 160px;
@@ -645,12 +751,14 @@
                 font-size: 2vw;
                 color: white;
             }
+
             .offers {
                 font-family: "Lato";
                 font-weight: 400;
                 font-size: 1vw;
                 color: white;
             }
+
             .crth1 {
                 color: white;
                 font-family: "Momcake Pro";
@@ -664,6 +772,7 @@
                 font-weight: bold;
                 font-size: 3vw;
             }
+
             .trees {
                 width: 100vw;
                 height: 100vh;
@@ -674,6 +783,7 @@
             .swiperr {
                 display: none;
             }
+
             .crth3 {
                 color: white;
                 font-family: "Momcake Pro";
@@ -686,11 +796,13 @@
                 font-weight: 700;
                 font-size: 30px;
             }
+
             .crth5 {
                 color: white;
                 font-family: "Momcake Pro";
                 font-size: 20px;
             }
+
             /* CSS */
             .button-18 {
                 align-items: center;
@@ -707,6 +819,7 @@
                     color: #20112b;
                 }
             }
+
             .sbmt {
                 right: 30px;
                 align-items: center;
@@ -725,9 +838,11 @@
             .onsbmt {
                 display: none;
             }
+
             .tnku {
                 display: none;
             }
+
             .disapper {
                 opacity: 0;
             }
@@ -735,7 +850,7 @@
 
         @media (min-width: 1440px) {
             .sets1 {
-                padding-left: 8.5vw;
+                padding-left: 7vw;
 
                 .pkgs {
                     font-size: 2.5vw;
@@ -745,40 +860,50 @@
                     font-size: 1.1vw;
                 }
             }
-            @media (min-width: 2157px) {
-                .sets1 {
-                    padding-left: 19%;
-
-                    .pkgs {
-                        font-size: 2vw;
-                    }
-                    .underline {
-                        width: auto;
-                        font-size: 1vw;
-                    }
-                }
-            }
 
             .arrow1 {
                 margin-left: 60px;
             }
+
             .arrow2 {
                 margin-left: 50px;
             }
+
             .arrow4 {
                 margin-left: 50px;
             }
+
             .sets {
                 padding-right: 70px;
             }
-            .frame {
-                padding-left: 90px;
-            }
+
             .frame1 {
                 padding-left: 60px;
             }
         }
+        @media screen and (min-width: 2000px) {
+            .frame1 {
+                padding-left: 5%;
+            }
+            .frame {
+                padding-left: 5%;
+                color: red;
+            }
+            .sets1 {
+                padding-left: 13%;
+
+                .pkgs {
+                    font-size: 2vw;
+                }
+
+                .underline {
+                    width: auto;
+                    font-size: 1vw;
+                }
+            }
+        }
         @media (min-width: 1024px) and (max-width: 1399px) {
+            //ipad and my laptop
             .sets {
                 .pkgs {
                     font-family: "Lato";
@@ -786,12 +911,14 @@
                     font-size: 2.4vw;
                     color: white;
                 }
+
                 .offers {
                     font-family: "Lato";
                     font-weight: 400;
                     font-size: 1.2vw;
                     color: white;
                 }
+
                 .underline {
                     max-width: 15vw;
                     font-size: 1vw;
@@ -802,15 +929,18 @@
                 padding-left: 60px;
             }
         }
+
         @media screen and(device-width: 1180px) {
             .sets {
                 padding-left: 10px;
+
                 .pkgs {
                     font-family: "Lato";
                     font-weight: 800;
                     font-size: 22px;
                     color: rgb(255, 255, 255);
                 }
+
                 .offers {
                     font-family: "Lato";
                     font-weight: 400;
