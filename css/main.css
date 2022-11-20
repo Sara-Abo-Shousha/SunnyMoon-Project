@@ -240,7 +240,7 @@ body {
     color: #20122b;
     font-family: "Lato";
     font-weight: 400;
-    font-size: 3.5vw;
+    font-size: 3vw;
     line-height: 1.2em;
     letter-spacing: -0.1px;
     white-space: nowrap;
@@ -313,13 +313,15 @@ body {
     margin-bottom: 0.3em;
   }
 }
-@media only screen and (max-width: 961px) and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .mobilediv #up,
-.mobilediv #dog {
-    width: 45%;
+@media only screen and (max-width: 961px) and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: portrait) {
+  .mobilediv .wlc {
+    font-size: 15vw;
   }
-  .mobilediv #by {
-    width: 58%;
+  .mobilediv .take {
+    font-size: 7vw;
+  }
+  .mobilediv .come {
+    font-size: 3vw;
   }
   .mobilediv .svgs {
     padding-top: 3em;
@@ -328,7 +330,19 @@ body {
     font-size: 3vw;
   }
   .mobilediv .text1 {
-    padding-top: 2em;
+    padding-top: 0em;
+  }
+  .mobilediv .svgs {
+    padding-top: 8vw;
+  }
+  .mobilediv .stars-lg {
+    padding-top: 5vw;
+  }
+  .mobilediv #stars {
+    width: 11em;
+  }
+  .mobilediv .mySwiper {
+    padding-top: 10vw;
   }
   .mobilediv #sun,
 .mobilediv #moon {
@@ -345,6 +359,18 @@ body {
   }
   .mobilediv .bullet {
     margin-left: 6em;
+  }
+  .mobilediv #crt1 {
+    font-size: 10vw;
+  }
+  .mobilediv #crt2 {
+    font-size: 3vw;
+  }
+  .mobilediv .crth {
+    padding-top: 10vw;
+  }
+  .mobilediv .line {
+    line-height: 5vw;
   }
 }
 @media screen and (max-width: 961px) {

@@ -93,7 +93,7 @@
               <div class="text-center mt-3 mt-md-5 position-relative" style="top: 3rem">
                 <div class="mt-5 mt-md-5 text-center">
                   <h3 class="text1 text-center pb-2">WHO WE ARE</h3>
-                  <p class="text2 col-auto text-center position-relative" style="left: 0.5rem">
+                  <p class="text2 col-auto position-relative">
                     We are two sisters with a rich experience in the market, <br />especially in
                     gaming and animation. We work with several <br />tasks such as visual
                     development, concept art, character<br />
@@ -106,20 +106,20 @@
               </div>
             </div>
             <div class="row mt-4">
-              <div class="col text-center w-100 pb-2">
-                <img src="./images/star2.svg" width="25%" />
+              <div class="col text-center stars-lg w-100 pb-2">
+                <img src="./images/star2.svg" id="stars" width="25%" />
               </div>
             </div>
           </div>
-          <div class="row svgs mt-3 text-center position-relative" style="left: 0.5rem">
-            <div class="col w-100">
-              <img src="./images/255 1.svg" id="by" width="73%" />
-            </div>
-            <div class="col w-100">
-              <img src="./images/2 1.svg" id="up" width="60%" />
-            </div>
-            <div class="col w-100">
-              <img src="./images/1 dog.svg" id="dog" width="60%" />
+          <div class="row svgs mt-3 text-center m-0 p-0 position-relative">
+            <div class="d-flex svgs flex-row justify-content-evenly position-relative w-100">
+              <div class="align-self-baseline">
+                <img src="./images/255 1.svg" id="by" size="70vw" />
+              </div>
+
+              <div><img src="./images/2 1.svg" id="up" size="60vw" /></div>
+
+              <div><img src="./images/1 dog.svg" id="dog" size="60vw" /></div>
             </div>
           </div>
           <div
@@ -238,10 +238,10 @@
               class="row pt-5 position-relative"
               id="crt2"
               style="top: 4m; bottom: 0; left: 0; right: 0">
-              <div class="col mt-5 mb-3" style="line-height: 1rem">
-                <p class="mt-5">
-                  <span class="crth1">CREATE WITH US</span><br />
-                  <span class="crth2">BOOK A FREE CONSULTATION</span><br />
+              <div class="col crth mt-5 mb-3" style="line-height: 1.5rem">
+                <p class="mt-5 line">
+                  <span class="crth1" id="crt1">CREATE WITH US</span><br />
+                  <span class="crth2" id="crt2">BOOK A FREE CONSULTATION</span><br />
                 </p>
               </div>
 
@@ -255,12 +255,12 @@
                   id="frm1">
                   <!-- Name input -->
 
-                  <div class="row mb-3">
+                  <div class="row mb-3" id="name">
                     <div class="col-10">
                       <input
                         name="name"
                         type="text"
-                        class="form-control"
+                        class="form-control name"
                         placeholder="NAME"
                         style="border-radius: 20px; width: 15rem; outline: none" />
                     </div>
@@ -272,6 +272,7 @@
                         type="email"
                         class="form-control"
                         placeholder="EMAIL"
+                        id="email"
                         style="
                           border-radius: 20px;
                           font-family: 'Lato';
@@ -294,6 +295,7 @@
                           border-radius: 20px;
                           outline: none;
                         "
+                        id="msg"
                         rows="1"
                         placeholder="WRITE TO US..."></textarea>
                     </div>
@@ -362,36 +364,37 @@
               </div>
             </div>
             <!-- Social Media Links -->
-            <div class="navbar-nav sm-icons pe-5">
+            <div
+              class="navbar-nav d-flex flex-row position-relative align-content-end sm-icons pe-5">
               <a
                 class="nav-link active nav-hover"
                 href="mailto: info.sunnymoonproject@gmail.com"
                 target="_blank"
-                ><img src="./images/email (2).png" role="img" width="18"
+                ><img src="./images/email (2).png" width="20"
               /></a>
               <a
                 class="nav-link active nav-hover"
                 href="https://www.instagram.com/sunnymoon.project/"
                 target="_blank"
-                ><img src="./images/insta.svg" role="img" width="15"
+                ><img src="./images/insta.svg" width="16"
               /></a>
               <a
                 class="nav-link active nav-hover"
                 href="https://twitter.com/SunnyMoonPrj"
                 target="_blank"
-                ><img src="./images/twitter.svg" role="img" width="15"
+                ><img src="./images/twitter.svg" width="16"
               /></a>
               <a
                 class="nav-link active nav-hover"
                 href="https://www.linkedin.com/company/sunnymoon-project/"
                 target="_blank"
-                ><img src="./images/linkedin.svg" role="img" width="15"
+                ><img src="./images/linkedin.svg" width="16"
               /></a>
               <a
                 class="nav-link active nav-hover"
                 href="https://www.behance.net/sunnymoonproject"
                 target="_blank"
-                ><img src="./images/Behance.svg" role="img" width="20"
+                ><img src="./images/Behance.svg" width="20"
               /></a>
             </div>
           </div>
@@ -495,9 +498,12 @@
               class="row sets sets1 position-relative m-0 p-0"
               style="top: 0vw; bottom: 0; left: 9vw; right: 0">
               <div class="col-auto sets1 ms-xl-5 ms-xxl-0">
-                <div class="ms-4 text-center position-relative pb-2">
-                  <img src="./images/Layer 3.png" style="width: 30%" />
+                <div
+                  class="col-auto text-center position-relative mb-5 ms-5 mb-xl-3"
+                  style="top: -2vw">
+                  <img src="./images/Layer 3.png" style="width: 6vw" />
                 </div>
+
                 <h3 class="pkgs pb-3 ms-5" id="txtdown">SUN PACKAGE</h3>
                 <div class="ms-5">
                   <div class="bullet pb-2">
@@ -516,12 +522,14 @@
               </div>
               <div
                 class="col-auto text-center position-relative ms-2 me-2"
-                style="width: auto; opacity: 0.7; top: 3vw">
+                style="width: auto; opacity: 0.7; top: 5vw">
                 <img src="./images/Line 51.png" style="width: auto; height: 70%" />
               </div>
               <div class="col-auto">
-                <div class="text-center position-relative pb-2">
-                  <img src="./images/Layer 5.png" style="width: 24%" />
+                <div
+                  class="col-auto text-center position-relative mb-5 ms-5 mb-xl-3"
+                  style="top: -2vw">
+                  <img src="./images/Layer 5.png" style="width: 5vw" />
                 </div>
                 <h3 class="pb-3 pkgs" id="txtdown1">MOON PACKAGE</h3>
                 <div>
@@ -542,12 +550,14 @@
 
               <div
                 class="col-auto position-relative ms-2 me-2"
-                style="width: auto; opacity: 0.7; top: 3vw">
+                style="width: auto; opacity: 0.7; top: 5vw">
                 <img src="./images/Line 51.png" style="width: auto; height: 70%" />
               </div>
               <div class="col-auto">
-                <div class="ms-4 pb-2 text-center position-relative">
-                  <img src="./images/Layer 4.png" style="width: 30%" />
+                <div
+                  class="col-auto text-center position-relative mb-5 ms-5 mb-xl-3"
+                  style="top: -2vw">
+                  <img src="./images/Layer 4.png" style="width: 6vw" />
                 </div>
                 <h3 class="pb-3 pkgs">ECLIPSE PACKAGE</h3>
                 <div id="pb-5">
@@ -592,8 +602,10 @@
             </a>
           </div>
           <div class="container-fluid">
-            <div class="row offset-1 mb-5">
-              <div class="col-auto mt-2 ms-3" style="line-height: 35px">
+            <div class="row offset-1 mb-5 position-relative">
+              <div
+                class="col-auto mt-2 ms-3 position-absolute"
+                style="line-height: 35px; top: -7em; bottom: 0; left: 0; right: 0">
                 <p>
                   <span class="crth1">CREATE WITH US</span><br />
                   <span class="crth2">BOOK A FREE CONSULTATION</span><br />
@@ -602,8 +614,8 @@
               </div>
 
               <div
-                class="col-4 me-5 position-absolute"
-                style="right: 5vw; float: right; z-index: 100">
+                class="col-5 me-5 position-absolute"
+                style="top: -6.6em; bottom: 0; right: 5vw; float: right; z-index: 100">
                 <form
                   name="contactdesktop"
                   method="POST"
