@@ -31,7 +31,7 @@
   font-style: normal;
   font-display: swap;
 }
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
   .d-no {
     display: none;
   }
@@ -240,7 +240,7 @@ body {
     color: #20122b;
     font-family: "Lato";
     font-weight: 400;
-    font-size: 3vw;
+    font-size: 3.5vw;
     line-height: 1.2em;
     letter-spacing: -0.1px;
     white-space: nowrap;
@@ -313,7 +313,7 @@ body {
     margin-bottom: 0.3em;
   }
 }
-@media only screen and (max-width: 961px) and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: portrait) {
+@media only screen and (max-width: 1024px) and (orientation: portrait) and (min-device-width: 712px) and (max-device-width: 1180px) and (orientation: portrait) {
   .mobilediv .wlc {
     font-size: 15vw;
   }
@@ -337,6 +337,12 @@ body {
   }
   .mobilediv .stars-lg {
     padding-top: 5vw;
+  }
+  .mobilediv #instamb,
+.mobilediv #twtmb,
+.mobilediv #lnkmb,
+.mobilediv #bhncmb {
+    width: 5vw;
   }
   .mobilediv #stars {
     width: 11em;
@@ -373,7 +379,7 @@ body {
     line-height: 5vw;
   }
 }
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
   .mobilediv .slider-container {
     width: 100%;
     height: auto;
@@ -383,7 +389,7 @@ body {
     background-color: linear-gradient(to right, rgb(255, 65, 108), rgb(255, 75, 43));
   }
 }
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
   .mobilediv .pkgs-slider {
     width: 100%;
     height: 600px;
@@ -395,7 +401,7 @@ body {
     transition: 0.7s;
   }
 }
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
   .mobilediv .slide-div {
     display: flex;
     align-items: center;
@@ -403,7 +409,7 @@ body {
     margin: 0 30px 0 10px;
   }
 }
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
   .mobilediv .pkg {
     position: relative;
     width: 240px;
@@ -411,7 +417,7 @@ body {
     transition: 0.5s;
   }
 }
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
   .mobilediv .button {
     position: absolute;
     width: 240px;
@@ -419,7 +425,7 @@ body {
     transition: 0.5s;
   }
 }
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
   .mobilediv .crth1 {
     color: white;
     font-family: "Momcake Pro";
@@ -427,7 +433,7 @@ body {
     font-size: 3rem;
   }
 }
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
   .mobilediv .crth2 {
     color: white;
     font-family: "Lato";
@@ -435,19 +441,19 @@ body {
     letter-spacing: 1px;
   }
 }
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
   .mobilediv .crth3 {
     color: white;
     font-family: "Momcake Pro";
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
   .mobilediv .msg {
     text-align: center;
   }
 }
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
   .mobilediv .crth4 {
     color: white;
     font-family: "Momcake Pro";
@@ -455,7 +461,7 @@ body {
     font-size: 2rem;
   }
 }
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
   .mobilediv .crth5 {
     color: white;
     font-family: "Momcake Pro";
@@ -471,7 +477,7 @@ body {
   width: 64vw;
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1024px) and (orientation: landscape) {
   body {
     height: 100vh;
     width: 100vw;
@@ -786,7 +792,7 @@ body {
     opacity: 0;
   }
 }
-@media screen and (min-width: 961px) and (min-width: 1440px) {
+@media screen and (min-width: 1024px) and (orientation: landscape) and (min-width: 1440px) {
   body .sets1 {
     padding-left: 7vw;
   }
@@ -812,7 +818,7 @@ body {
     padding-left: 60px;
   }
 }
-@media screen and (min-width: 961px) and (min-width: 2000px) {
+@media screen and (min-width: 1024px) and (orientation: landscape) and (min-width: 2000px) {
   body .frame1 {
     padding-left: 5%;
   }
@@ -831,7 +837,7 @@ body {
     font-size: 1vw;
   }
 }
-@media screen and (min-width: 961px) and (min-width: 1024px) and (max-width: 1399px) {
+@media screen and (min-width: 1024px) and (orientation: landscape) and (min-width: 1024px) and (max-width: 1399px) {
   body .sets .pkgs {
     font-family: "Lato";
     font-weight: 800;
@@ -852,7 +858,7 @@ body {
     padding-left: 60px;
   }
 }
-@media screen and (min-width: 961px) and (device-width: 1180px) {
+@media screen and (min-width: 1024px) and (orientation: landscape) and (device-width: 1180px) {
   body .sets {
     padding-left: 10px;
   }

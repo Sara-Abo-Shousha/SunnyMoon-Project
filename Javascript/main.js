@@ -14,7 +14,7 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
     dynamicBullets: true,
   },
-
+ 
     breakpoints: {
       // when window width is >= 320px
       320: {

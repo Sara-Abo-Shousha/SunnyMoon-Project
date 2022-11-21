@@ -47,7 +47,7 @@
 
 //@each $var in list {
 
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
     .d-no {
         display: none;
     }
@@ -307,7 +307,7 @@
             color: #20122b;
             font-family: "Lato";
             font-weight: 400;
-            font-size: 3vw;
+            font-size: 3.5vw;
             line-height: 1.2em;
             letter-spacing: -0.1px;
             white-space: nowrap;
@@ -390,7 +390,7 @@
             padding-bottom: 0.2em;
             margin-bottom: 0.3em;
         }
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: portrait) {
+        @media only screen and (min-device-width: 712px) and (max-device-width: 1180px) and (orientation: portrait) {
             .wlc {
                 font-size: 15vw;
             }
@@ -414,6 +414,12 @@
             }
             .stars-lg {
                 padding-top: 5vw;
+            }
+            #instamb,
+            #twtmb,
+            #lnkmb,
+            #bhncmb {
+                width: 5vw;
             }
             #stars {
                 width: 11em;
@@ -542,7 +548,7 @@
     width: 64vw;
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1024px) and (orientation: landscape) {
     body {
         height: 100vh;
         width: 100vw;
