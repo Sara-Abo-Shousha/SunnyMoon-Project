@@ -47,7 +47,7 @@
 
 //@each $var in list {
 
-@media screen and (max-width: 1024px) and (orientation: portrait) {
+@media all and (max-width: 1024px) and (orientation: portrait) {
     .d-no {
         display: none;
     }
