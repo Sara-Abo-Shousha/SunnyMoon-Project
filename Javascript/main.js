@@ -1,10 +1,4 @@
 
-window.localStorage.setItem('page', 'index.html');
-var startPage = window.localStorage.getItem('page');
-
-if (startPage) {
-    window.location.replace(startPage);
-}
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
