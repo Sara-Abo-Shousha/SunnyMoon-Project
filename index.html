@@ -25,7 +25,7 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
   </head>
 
-  <body>
+  <body onLoad="JavaScript:checkRefresh();">
     <div class="mobilediv">
       <header>
         <nav class="navbar fixed-top bg-transparent">
@@ -253,7 +253,6 @@
                   data-netlify="true"
                   onsubmit="submt1()"
                   onSubmit="submit"
-                  action="/index/"
                   id="frm1">
                   <!-- Name input -->
 
@@ -628,7 +627,7 @@
                   onSubmit="submit"
                   onsubmit="submt()"
                   id="frm"
-                  action="/index/"
+                  success="/index/"
                   date-netlify-honeypot="bot-field">
                   <!-- Name input -->
                   <div class="row mb-3">

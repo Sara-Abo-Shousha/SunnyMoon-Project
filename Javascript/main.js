@@ -1,4 +1,20 @@
 
+function checkRefresh()
+{
+    if( document.refreshForm.visited.value == "" )
+    {
+        // This is a fresh page load
+        document.refreshForm.visited.value = "1";
+
+        window.location.replace("https://www.sunnymoonproject.com/");
+
+    }
+    else
+    {
+      window.location.replace("https://www.sunnymoonproject.com/");
+
+    }
+}
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
